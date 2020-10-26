@@ -7,7 +7,7 @@ Cull: 7 AD
 
 Therefore, Cull is missing 1 AD and 80 HP in combat stats.  
 
-Converting that to pure AD using gold as a common denominator:
+Converting that to pure AD using gold as a common denominator:  
 400g for 150 HP from Ruby Crystal means 1 HP is roughly 2.66g  
 350g for 10 AD from Long Sword means 1 AD is roughly 35g  
 
@@ -17,4 +17,4 @@ Therefore, 80 HP to AD is...
 
 Therefore, Cull is roughly missing 7 AD from a combat statistics perspective.  
 
-We include absolute focus but exclude gathering storm as this primarily focuses on early levels and gathering storm only starts giving value after 10.
+I include absolute focus but exclude gathering storm as this primarily focuses on early levels and gathering storm only starts giving value after 10.
