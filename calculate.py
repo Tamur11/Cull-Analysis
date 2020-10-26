@@ -50,16 +50,15 @@ for i in range(0, 2):
 
         percent_max_hp = (actual_hp_target-actual_hp_cull_user)/actual_hp_cull_user
 
-        bonus_damage = ((percent_max_hp-0.1)*(1/9))+0.05
-        if bonus_damage >= 0.05 and bonus_damage <= 0.15:
-            damage_being_added = actual_ad_cull_user*bonus_damage
+        bonus_damage = ((percent_max_hp-0.1)*(1/9))+1.05
+        if bonus_damage >= 1.05 and bonus_damage <= 1.15:
+            damage_being_added = (actual_ad_cull_user*(100/(100+armor_target+(armor_scale_target*level)))*bonus_damage)-\
+                actual_ad_cull_user*(100/(100+armor_target+(armor_scale_target*level)))
             print("At level " +str(level+1) + " adding " + str(damage_being_added) + " damage.")
             seven_ad_as_damage = 7*(100/(100+armor_target+(armor_scale_target*level)))
             print("Dorans' '7 AD' would be doing " + str(seven_ad_as_damage) + " damage.")
             if damage_being_added > seven_ad_as_damage:
                 print("Cull is worth it.")
             print("")
-        if bonus_damage > 0.15:
+        if bonus_damage > 1.15:
             damage_being_added = actual_ad_cull_user*1.15
-
-
